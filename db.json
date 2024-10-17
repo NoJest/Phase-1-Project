@@ -2,38 +2,43 @@
   "astro-events": [      
     {
         "id": "1" ,
-        "content": "whatever",
-        "image": "",
-        "likes":"",
-        "comments": ""
+        "name": "Super Hunter's Moon",
+        "image": "https://media.glamourmagazine.co.uk/photos/653ba4f47b2e2ec29afd568e/16:9/w_1920,h_1080,c_limit/HUNTERS%20FULL%20MOON%20271023%20GettyImages-121489219_L.jpg",
+        "date": "10/17/2024",
+        "views":"1",
+        "comments": "I saw it from my roof in NYC and was Blown away."
     },
     {
         "id": "2" ,
-        "content": "whatever",
-        "image": "",
-        "likes":"",
-        "comments": ""
+        "name": "Orionid Meteor Shower",
+        "image": "https://d.newsweek.com/en/full/2494559/orionid-meteor-shower.jpg?w=1280&h=720&q=88&f=f70a47609e984cf41ee717cf32bd55a4",
+        "date": "Peaks 10/20/2024-10/21/2024",
+        "views":"1",
+        "comments": "The second meteor shower this October, active between October 2nd and November 7th but peaks October 20-21st."
        },
        {
         "id": "3" ,
-        "content": "whatever",
-        "image": "",
-        "likes":"",
-        "comments": ""
+        "name": "New Moon",
+        "image": "https://c.tadst.com/gfx/600x337/total-solar-elipse-diamondring.jpg?1",
+        "date": "11/1/2024",
+        "views":"1",
+        "comments": "Not just for vampires, The New Moon phase is the best time to explore the night sky, also known as the invisible moon phase."
        },
        {
         "id": "4" ,
-        "content": "whatever",
-        "image": "",
-        "likes":"",
-        "comments": ""
+        "name": "Beaver Moon",
+        "image": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/3142/files/2023/11/screenshot-2023-11-26-201321.png",
+        "date": "11/15/2024",
+        "views":"1",
+        "comments": "A Full Moon named after the beavers that typically build their dams during this time of year."
        },
        {
         "id": "5" ,
-        "content": "whatever",
-        "image": "",
-        "likes":"",
-        "comments": ""
+        "name": "Leonid Meteor Shower",
+        "image": "https://www.rmg.co.uk/sites/default/files/styles/full_width_1440/public/S07_CL_LOW%20RES%202015.jpg?itok=bu9eSrxh",
+        "date": "11/17/2024-11/18/2024",
+        "views":"1",
+        "comments": "The Leonids shooting stars are visible between November 6 and November 30th but peak on the night of the 17th with up to 15 meteors per hour."
        }
     ]
     }
