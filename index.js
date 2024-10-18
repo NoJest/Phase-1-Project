@@ -18,45 +18,75 @@ const submitButton = document.querySelector("#submit-button")
 // const  = document.querySelector("#")
 // const  = document.querySelector("#")
 
-//Functions
+// helper functions
 function addToCarousel (data) {
-    const eventPicture = document.createElement ('img')
-    eventPicture.src = data.image
-    carousel.append(eventPicture)
-    eventPicture.addEventListener('click',() => handleClick(data))
+  const eventPicture = document.createElement ('img')
+  eventPicture.src = data.image
+  carousel.append(eventPicture)
+  eventPicture.addEventListener('dblclick',() => handleDblClick(data))
+}
+
+//Functions
+
+// Submission of new astro events
+async function eventSubmission(event) {
+    event.preventDefault()
+    const newEventImage = newImage.value
+    const newEventName = newName.value
+    const newEventLocation = newLocation.value
+    const newEventViews = newViews.value
+    const newEventComment = newComment.value
+    const newEventDate = newDate.value
+
+    // // Basic URL pattern to match URLs starting with http or https
+    // const urlPattern = /^(https?:\/\/)[\w\-]+(\.[\w\-]+)+[/#?]?.*$/;
+
+    // Check if any input is empty
+    if (!newEventImage || !newEventName || !newEventLocation || !newEventDate || !newEventViews || !newEventComment) 
+    {
+    alert("Please fill out all fields before submitting.");
+    return;
     }
 
+    //  // Check if newEventImage is a valid URL
+    //  if (!urlPattern.test(newEventImage)) {
+    //   alert("Please enter a valid URL for the image.");
+    //   return;
+    // }
 
-    async function eventSubmission(event) {
-        event.preventDefault()
-        const newEventImage = newImage.value
-        const newEventName = newName.value
-        const newEventLocation = newLocation.value
-        const newEventViews = newViews.value
-        const newEventComment = newComment.value
-        
-        const response = await fetch('http://localhost:3000/astro-events', {
+
+    const response = await fetch('http://localhost:3000/astro-events', {
           method: "POST",
           headers: { "Content-Type": 'application/json' },
-          body: JSON.stringify( { name: newEventName, location: newEventLocation, image: newEventImage, views: newEventViews, comment:newEventComment  } )
-        })
+          body: JSON.stringify( { 
+            name: newEventName, 
+            location: newEventLocation, 
+            image: newEventImage, 
+            date: newEventDate,
+            views: newEventViews, 
+            comment:newEventComment  
+          } )
+    })
         
-        const newEventInput = await response.json()
-        addToCarousel(newEventInput)
+    const newEventInput = await response.json()
+    console.log(newEventInput)
+      addToCarousel(newEventInput)
         
-        newEvent.reset()
-      }
+      newEvent.reset()
+};
 
-//Event listeners (3distinct event listeners)
-async function handleClick (data) {
-    focusImage.src = data.image
-    focusName.textContent = data.name
-    focusLocation.textContent = data.newLocation
-    focusDate.textContent = data.date
-    focusViews.textContent = data.views
-    focusComment.textContent = data.comments
-   };
+// function to handle dbl lcick
+async function handleDblClick (data) {
+          focusImage.src = data.image
+          focusName.textContent = data.name
+          focusLocation.textContent = data.newLocation
+          focusDate.textContent = data.date
+          focusViews.textContent = data.views
+          focusComment.textContent = data.comment
+};
+//Event listeners (3distinct event listeners) (one is built into addToCarousel)
 
+submitButton.addEventListener("click",eventSubmission)
 
 //Fetch 
 
@@ -64,8 +94,8 @@ async function displayEvents () {
     const response = await fetch('http://localhost:3000/astro-events')
     const data = await response.json()
     data.forEach(addToCarousel)
-  
-    handleClick(data[0])
+  // make sure image/ data 0 is shown right away
+    handleDblClick(data[0])
 }
 
 displayEvents()
