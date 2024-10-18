@@ -20,10 +20,22 @@ const submitButton = document.querySelector("#submit-button")
 
 // helper functions
 function addToCarousel (data) {
-  const eventPicture = document.createElement ('img')
-  eventPicture.src = data.image
-  carousel.append(eventPicture)
-  eventPicture.addEventListener('dblclick',() => handleDblClick(data))
+  const imageContainer = document.createElement('div');
+       imageContainer.classList.add('image-container');
+
+       const eventPicture = document.createElement('img');
+       eventPicture.src = data.image;
+
+       const overlay = document.createElement('div');
+       overlay.classList.add('overlay');
+       overlay.textContent = data.name;
+
+       imageContainer.append(eventPicture, overlay);
+       carousel.append(imageContainer);
+
+       imageContainer.addEventListener('mouseover', () => handleMouseover(eventPicture, overlay, data.name));
+      
+       eventPicture.addEventListener('dblclick',() => handleDblClick(data))
 }
 
 //Functions
@@ -31,12 +43,12 @@ function addToCarousel (data) {
 // Submission of new astro events
 async function eventSubmission(event) {
     event.preventDefault()
-    const newEventImage = newImage.value
-    const newEventName = newName.value
-    const newEventLocation = newLocation.value
-    const newEventViews = newViews.value
-    const newEventComment = newComment.value
-    const newEventDate = newDate.value
+    const newEventImage = newImage.value.trim()
+    const newEventName = newName.value.trim()
+    const newEventLocation = newLocation.value.trim()
+    const newEventViews = newViews.value.trim()
+    const newEventComment = newComment.value.trim()
+    const newEventDate = newDate.value.trim()
 
     // // Basic URL pattern to match URLs starting with http or https
     // const urlPattern = /^(https?:\/\/)[\w\-]+(\.[\w\-]+)+[/#?]?.*$/;
@@ -84,9 +96,19 @@ async function handleDblClick (data) {
           focusViews.textContent = data.views
           focusComment.textContent = data.comment
 };
-//Event listeners (3distinct event listeners) (one is built into addToCarousel)
+
+// Function to handle mouseover
+async function handleMouseover (data) {
+
+  
+}
+function handleMouseover(image, overlay, name) {
+  overlay.textContent = name;
+}
+//Event listeners (3distinct event listeners) (two are built into addToCarousel)
 
 submitButton.addEventListener("click",eventSubmission)
+
 
 //Fetch 
 
