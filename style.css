@@ -5,7 +5,6 @@
     cursor: url("assets/star-icon.png"), auto;
   }
 
-  
   .image-container {
     position: relative;
     display: inline-block; /* Adjust this if needed */
