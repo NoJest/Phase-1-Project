@@ -33,7 +33,7 @@
     align-items: center;
   }
   body {
-    background-image: url('https://imgs.search.brave.com/L4YKxFIX2SDIJtWMAoMRdt6DwEeA1zXy5M-8RrL474o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG92ZXRoaXNwaWMu/Y29tL3VwbG9hZGVk/X2ltYWdlcy8yMTUz/NS1Mb3ZlLUlzLUxv/b2tpbmctQXQtVGhl/LVN0YXJzLVRvZ2V0/aGVyLmpwZz8y');
+    background-image: url('assets/DarkImage.png');
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -48,19 +48,23 @@
     background-color: black;
   }
 
-  #the-guy {
+  /* #the-guy {
     display: flex;
     justify-content: center;
     height: 600px;
     width: 200px;
     margin-bottom: 20px;
-  }
+  } */
   
   #astro-events {
+    z-index: 1;
     display: flex;
     overflow-x: auto;
     margin: 1rem 0;
     max-width: calc(100vw - 2rem);
+    position: fixed;
+    top: 100px;
+    left: 100px;
   }
   #detail-location {
     color: rgb(218, 240, 24);
@@ -70,6 +74,9 @@
     height: 150px;
     margin-right: 0.5rem;
     cursor: pointer;
+    object-fit:cover;
+    height: 150px ;
+    width: 200px ;
   }
   
   #astro-events img:last-child {
@@ -80,9 +87,17 @@
   #astro-event-detail {
     color: rgb(218, 240, 24);
     position: relative;
+    top:30%
   }
-  
+  #comment-display {
+    color: rgb(218, 240, 24);
+  }
+  #detail-location{
+    color: rgb(218, 240, 24);
+
+  }
   .detail-image {
+    object-fit: contain;
     height: 500px;
     width: 734px;
   }
@@ -91,21 +106,15 @@
   .name,
   .location
   {
-
-    position: absolute;
-    left: 10px;
-    padding: 0.25rem 5rem 0.25rem 1rem;
-    background-color: black;
+  bottom: 60px;  
+  color: rgb(218, 240, 24);
   }
   
   .name {
     bottom: 60px;
   }
   
-  .location {
-    bottom: 20px;
-  }
-  
+
   form {
     margin: 1rem 0;
     width: 300px;
@@ -113,6 +122,8 @@
     flex-direction: column;
     align-items: flex-start;
     color: rgb(218, 240, 24);
+    position: relative;
+    top: 300px
   }
   
   input,

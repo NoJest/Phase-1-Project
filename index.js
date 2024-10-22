@@ -91,10 +91,12 @@ async function eventSubmission(event) {
 async function handleDblClick (data) {
           focusImage.src = data.image
           focusName.textContent = data.name
-          focusLocation.textContent = data.newLocation
+          focusLocation.textContent = data.location
           focusDate.textContent = data.date
           focusViews.textContent = data.views
-          focusComment.textContent = data.comment
+          focusComment.textContent = data.comments
+          console.log(data.location)
+          console.log(data.newLocation)
 };
 
 // Function to handle mouseover

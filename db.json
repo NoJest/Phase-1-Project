@@ -3,6 +3,7 @@
     {
       "id": "1",
       "name": "Super Hunter's Moon",
+      "location": "Earth",
       "image": "https://media.glamourmagazine.co.uk/photos/653ba4f47b2e2ec29afd568e/16:9/w_1920,h_1080,c_limit/HUNTERS%20FULL%20MOON%20271023%20GettyImages-121489219_L.jpg",
       "date": "10/17/2024",
       "views": "1",
@@ -11,6 +12,7 @@
     {
       "id": "2",
       "name": "Orionid Meteor Shower",
+      "location": "Earth",
       "image": "https://d.newsweek.com/en/full/2494559/orionid-meteor-shower.jpg?w=1280&h=720&q=88&f=f70a47609e984cf41ee717cf32bd55a4",
       "date": "Peaks 10/20/2024-10/21/2024",
       "views": "1",
@@ -19,6 +21,7 @@
     {
       "id": "3",
       "name": "New Moon",
+      "location": "Earth",
       "image": "https://c.tadst.com/gfx/600x337/total-solar-elipse-diamondring.jpg?1",
       "date": "11/1/2024",
       "views": "1",
@@ -27,6 +30,7 @@
     {
       "id": "4",
       "name": "Beaver Moon",
+      "location": "Earth",
       "image": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/3142/files/2023/11/screenshot-2023-11-26-201321.png",
       "date": "11/15/2024",
       "views": "1",
@@ -35,6 +39,7 @@
     {
       "id": "5",
       "name": "Leonid Meteor Shower",
+      "location": "Earth",
       "image": "https://www.rmg.co.uk/sites/default/files/styles/full_width_1440/public/S07_CL_LOW%20RES%202015.jpg?itok=bu9eSrxh",
       "date": "11/17/2024-11/18/2024",
       "views": "1",
