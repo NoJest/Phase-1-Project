@@ -18,6 +18,14 @@ const submitButton = document.querySelector("#submit-button")
 // const  = document.querySelector("#")
 // const  = document.querySelector("#")
 
+
+// audio element 
+window.addEventListener('click', function() {
+  const audioElement = document.getElementById('audio');
+  audioElement.muted = false;
+  audioElement.play();
+})
+
 // helper functions
 function addToCarousel (data) {
   const imageContainer = document.createElement('div');
@@ -95,8 +103,6 @@ async function handleDblClick (data) {
           focusDate.textContent = data.date
           focusViews.textContent = data.views
           focusComment.textContent = data.comments
-          console.log(data.location)
-          console.log(data.newLocation)
 };
 
 // Function to handle mouseover
@@ -107,9 +113,13 @@ async function handleMouseover (data) {
 function handleMouseover(image, overlay, name) {
   overlay.textContent = name;
 }
+
+
 //Event listeners (3distinct event listeners) (two are built into addToCarousel)
 
 submitButton.addEventListener("click",eventSubmission)
+
+//audio
 
 
 //Fetch 

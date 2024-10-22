@@ -66,6 +66,7 @@
     top: 100px;
     left: 100px;
     right: 100px;
+    /* scrollbar-color:rgb(218, 240, 24) ; */
   }
   #detail-location {
     color: rgb(218, 240, 24);
