@@ -44,6 +44,96 @@
       "date": "11/17/2024-11/18/2024",
       "views": "1",
       "comments": "The Leonids shooting stars are visible between November 6 and November 30th but peak on the night of the 17th with up to 15 meteors per hour."
+    },
+    {
+      "id": "6",
+      "name": "New Moon",
+      "location": "Earth",
+      "image": "https://c.tadst.com/gfx/600x337/total-solar-elipse-diamondring.jpg?1",
+      "date": "11/1/2024",
+      "views": "1",
+      "comments": "Not just for vampires, The New Moon phase is the best time to explore the night sky, also known as the invisible moon phase."
+    },
+    {
+      "id": "7",
+      "name": "Jupiter at Opposition",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/xKFlQ9JraIxVyeNkQMeuEkpiW3TTMY0yt5ZBoU-D2qU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM5/MDg0MDY2L3Bob3Rv/L2p1cGl0ZXIuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTQ3/aUNOS2s1azZxcWtO/MHhvb0RET2xUSzhO/d1lrTHlLX05RbVR1/UWxGX2s9",
+      "date": "12/7/2024",
+      "views": "1",
+      "comments": "This gargantuan planet will be at its closest approach to Earch and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long to the naked eye."
+    },
+    {
+      "id": "8",
+      "name": "Geminids Meteor Shower",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/V9WBE7cZ2zdwOFFn1-IDFUX_nxLgo_oV_QBcxJ_m_rw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubmV3c2NpZW50/aXN0LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8xMi8x/MzExMzgzNi9nZW1p/bmlkc3NlaTE4Mzg5/MDkzMC5qcGc",
+      "date": "12/13-14/2024",
+      "views": "1",
+      "comments": "The Geminids is the king of the meteor showers. It is considered by many to be the best shower in the heaves, producing up to 120 multicolored meteors per hour at its peak."
+    },
+    {
+      "id": "9",
+      "name": "Full Moon",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/t5Yu2OkEYdoOwVZybdkzl7cq6hdQR5PyZ_rYK2YXwxA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTYw/NDIxNzM4L3Bob3Rv/L21vb24tb24tY2xv/dWR5LWRheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9V29z/LV81TnI1YU04OTRt/bVVLazFOa0N4SDBn/cjVhLS1rdkVHZHJY/d1NEbz0",
+      "date": "12/15/2024",
+      "views": "1",
+      "comments": "Known by early indigenous Americans as the Cold Moon because this of the weather this time of year, also cold in that it will ruin our view of the Geminids meteor shower."
+    },
+    {
+      "id": "10",
+      "name": "December Solstice",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/IgVQIV1Y-E1ICioPjJQuale7mBzcsVockY-GLVU-5Fk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjAtMTIvNGc0Ymx1/ODhfd2ludGVyLXNv/bHN0aWNlXzYyNXgz/MDBfMjBfRGVjZW1i/ZXJfMjAuanBn",
+      "date": "12/21/2024",
+      "views": "1",
+      "comments": "The South Pole of the Earth will be tilted toward the Sun, which will have reached its southernmost position in the sky. This is the first day of winter in the Northern hemisphere, and first day of summer in the Southern Hemisphere. "
+    },
+    {
+      "id": "11",
+      "name": "Ursids Meteor Shower",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/8RarD8S5Wi1Rw4p25JueDGeuWrJhd6lOjyvaZp_r7PI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wZW9w/bGUuY29tL3RobWIv/TGtIcXhCV3lrX1Zn/TVlfU0Q1VWpuazBj/QVdRPS8xNTAweDAv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCk6Zm9jYWwoNzE5/eDQ5Njo3MjF4NDk4/KS91cnNpZHMtMy1j/OTVjMjFlMTNjMGU0/ODc1OWQwNTQ2YjEz/MjEwMjZkMi5qcGc",
+      "date": "12/21-22/2024",
+      "views": "1",
+      "comments": "A minor meteor shower producing about 5-10 meteors per hour. The waning moon will block many of the fainter meteors this year."
+    },
+    {
+      "id": "12",
+      "name": "Mercury at Greatest Western Elongation",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/wfaxORYVPKxWVXI-2c4YSDiZEnsgizXBbhrZ_RhkE4k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0Lzk3LzQyLzA0/LzM2MF9GXzQ5NzQy/MDQ1Nl83OVpqaDI4/TTE5cFdOQTIzTzhO/aDh0SmpkR1F3d2FR/Zi5qcGc",
+      "date": "12/25/2024",
+      "views": "1",
+      "comments": "A little Christmas gift to us all, Mercury reached its greatest western elgonation of 22 degrees from the Sun, this is the best time to view Mercury, look for Mercury low in the eastern sky just before sunrise."
+    },
+    {
+      "id": "13",
+      "name": "New Moon",
+      "location": "Earth",
+      "image": "https://c.tadst.com/gfx/600x337/total-solar-elipse-diamondring.jpg?1",
+      "date": "12/30/2024",
+      "views": "1",
+      "comments": "Last New Moon of the year 2024, The New Moon phase is the best time to explore the night sky, also known as the invisible moon phase."
+    },
+    {
+      "id": "14",
+      "name": "Quadrantids Meteor Shower",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/0bVSQCLBUjFYdc7EjNrqL7aTy40Bce8eg4c5G6dYzHY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L2Zr/Wm1jTEp6ZmVCY0xF/Qm9YOEVaVFYtMzIw/LTgwLmpwZw",
+      "date": "1/3-4/2024",
+      "views": "1",
+      "comments": "The Quadrantids has up to 40 meteors per hour at its peak, the crescent moon will set early in the evening leaving dark skies for what should be an excellent meteor shower."
+    },
+    {
+      "id": "15",
+      "name": "Venus at Greatest Eastern Elongation",
+      "location": "Earth",
+      "image": "https://imgs.search.brave.com/hAwZdogTMI6WpAiv_1ShdWWdUJODv04qyKLiRp8DDyE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJlZWh1Z2dlci5j/b20vdGhtYi9PZnN5/cFpBa3NpVk5LSWpO/LXRCYXJmTzZEM2M9/LzE1MDB4MC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKS9f/X29wdF9fYWJvdXRj/b21fX2NvZXVzX19y/ZXNvdXJjZXNfX2Nv/bnRlbnRfbWlncmF0/aW9uX19tbm5fX2lt/YWdlc19fMjAxMF9f/MTJfX3N1cmZhY2Vf/VmVudXNfTWFnZWxs/YW4tNzRkZDFkNjUy/ODkzNGM5MWE3MGUw/N2U2NzZkYTYwZTcu/anBn",
+      "date": "1/10/2024",
+      "views": "1",
+      "comments": "The planet Venus reaches its greatest eastern elongation of 47.2 degrees from the Sun, The best time to view Venus, look for the bright planet in the western sky after sunset."
     }
   ]
 }
