@@ -8,6 +8,7 @@
   .image-container {
     position: relative;
     display: inline-block; /* Adjust this if needed */
+    background-color: black;
 }
 
 .overlay {

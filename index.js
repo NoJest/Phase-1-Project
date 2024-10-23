@@ -15,8 +15,10 @@ const newImage  = document.querySelector("#new-image")
 const newViews  = document.querySelector("#new-views")
 const newComment  = document.querySelector("#new-comment")
 const submitButton = document.querySelector("#submit-button")
-// const  = document.querySelector("#")
-// const  = document.querySelector("#")
+const updateViews = document.querySelector("#update-views")
+const updateButton = document.querySelector('#update-button')
+const  updateForm = document.querySelector("#edit-event")
+let currentId 
 
 
 // audio element 
@@ -89,12 +91,37 @@ async function eventSubmission(event) {
     })
         
     const newEventInput = await response.json()
-    console.log(newEventInput)
+    // console.log(newEventInput)
       addToCarousel(newEventInput)
-        
       newEvent.reset()
-};
 
+    };
+    
+    // Update views
+    updateForm.addEventListener('submit', (event) => handleUpdate(event))
+    
+    async function handleUpdate(event) {
+      event.preventDefault()
+    
+      const updateEventViews = updateViews.value
+
+      if (!updateEventViews) 
+        {
+        alert("Please input views before submitting.");
+        return;
+        }
+    
+    
+      const response = await fetch(`http://localhost:3000/astro-events/${currentId}`,{
+        method: 'PATCH',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify( {views: updateEventViews} )
+      })
+      const result = response.json()
+      // console.log(result)
+      updateForm.reset()
+    }
+    
 // function to handle dbl lcick
 async function handleDblClick (data) {
           focusImage.src = data.image
@@ -103,6 +130,7 @@ async function handleDblClick (data) {
           focusDate.textContent = data.date
           focusViews.textContent = data.views
           focusComment.textContent = data.comments
+          currentId = data.id
 };
 
 // Function to handle mouseover
@@ -118,8 +146,6 @@ function handleMouseover(image, overlay, name) {
 //Event listeners (3distinct event listeners) (two are built into addToCarousel)
 
 submitButton.addEventListener("click",eventSubmission)
-
-//audio
 
 
 //Fetch 
