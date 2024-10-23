@@ -65,8 +65,8 @@ header {
   max-width: calc(100vw - 2rem);
   position: fixed;
   top: 100px;
-  left: 100px;
-  right: 100px;
+  /* left: 100px;
+  right: 100px; */
   
 }
 #detail-location {
