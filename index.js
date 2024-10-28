@@ -77,7 +77,7 @@ async function eventSubmission(event) {
     // }
 
 
-    const response = await fetch('http://localhost:3000/astro-events', {
+    const response = await fetch('https://phase-1-project-server.onrender.com/astro-events', {
           method: "POST",
           headers: { "Content-Type": 'application/json' },
           body: JSON.stringify( { 
@@ -112,7 +112,7 @@ async function eventSubmission(event) {
         }
     
     
-      const response = await fetch(`http://localhost:3000/astro-events/${currentId}`,{
+      const response = await fetch(`https://phase-1-project-server.onrender.com/astro-events/${currentId}`,{
         method: 'PATCH',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify( {views: updateEventViews} )
@@ -151,7 +151,7 @@ submitButton.addEventListener("click",eventSubmission)
 //Fetch 
 
 async function displayEvents () {
-    const response = await fetch('http://localhost:3000/astro-events')
+    const response = await fetch('https://phase-1-project-server.onrender.com/astro-events')
     const data = await response.json()
     data.forEach(addToCarousel)
   // make sure image/ data 0 is shown right away

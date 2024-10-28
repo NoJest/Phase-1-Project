@@ -63,7 +63,7 @@ header {
   overflow-x: auto;
   margin: 1rem 0;
   max-width: calc(100vw - 2rem);
-  position: fixed;
+  /* position: fixed; */
   top: 100px;
   /* left: 100px;
   right: 100px; */
